@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_StackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Wg-UV-EuW">
+                                <rect key="frame" x="60" y="101" width="255" height="303"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFx-9g-FF4">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgr-fb-16y">
+                                                <rect key="frame" x="102.5" y="15" width="50" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="HIT ME">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kH9-ZJ-EF8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.4549019608" green="0.61176470589999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="fgr-fb-16y" firstAttribute="centerY" secondItem="RFx-9g-FF4" secondAttribute="centerY" id="TJc-xu-vlw"/>
+                                            <constraint firstItem="fgr-fb-16y" firstAttribute="centerX" secondItem="RFx-9g-FF4" secondAttribute="centerX" id="nhY-bH-x7U"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcr-rO-wO9">
+                                        <rect key="frame" x="0.0" y="61" width="255" height="59.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="459-ST-9eF">
+                                                <rect key="frame" x="102.5" y="14.5" width="50" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="HIT ME">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4Q-R5-h7H"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98109275100000004" green="0.40393486620000002" blue="0.022232532499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="459-ST-9eF" firstAttribute="centerX" secondItem="gcr-rO-wO9" secondAttribute="centerX" id="QIt-8V-s2d"/>
+                                            <constraint firstItem="459-ST-9eF" firstAttribute="centerY" secondItem="gcr-rO-wO9" secondAttribute="centerY" id="ygY-Ql-7ww"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-12-odi">
+                                        <rect key="frame" x="0.0" y="121.5" width="255" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRE-iW-Tkl">
+                                                <rect key="frame" x="102.5" y="15" width="50" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="HIT ME">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NjF-ed-c3J"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.72156862749999995" green="0.56862745100000001" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="yRE-iW-Tkl" firstAttribute="centerY" secondItem="N9P-12-odi" secondAttribute="centerY" id="7sg-e1-UCc"/>
+                                            <constraint firstItem="yRE-iW-Tkl" firstAttribute="centerX" secondItem="N9P-12-odi" secondAttribute="centerX" id="lki-UV-obP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCa-AM-Fdo">
+                                        <rect key="frame" x="0.0" y="182.5" width="255" height="59.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-Fg-P0d">
+                                                <rect key="frame" x="102.5" y="15" width="50" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="HIT ME">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WC-rU-vUy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.88056098090000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZMf-Fg-P0d" firstAttribute="centerX" secondItem="jCa-AM-Fdo" secondAttribute="centerX" id="ZTR-QB-czG"/>
+                                            <constraint firstItem="ZMf-Fg-P0d" firstAttribute="centerY" secondItem="jCa-AM-Fdo" secondAttribute="centerY" id="uAA-g3-dOI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnA-fy-bfe">
+                                        <rect key="frame" x="0.0" y="243" width="255" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX2-WM-3hn">
+                                                <rect key="frame" x="102.5" y="15" width="50" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="HIT ME">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEs-74-q6y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.022309998050000002" green="0.70180886980000001" blue="0.07980661839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="yX2-WM-3hn" firstAttribute="centerY" secondItem="XnA-fy-bfe" secondAttribute="centerY" id="ghi-dY-S9F"/>
+                                            <constraint firstItem="yX2-WM-3hn" firstAttribute="centerX" secondItem="XnA-fy-bfe" secondAttribute="centerX" id="gqR-pa-wOe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gcr-rO-wO9" firstAttribute="top" secondItem="RFx-9g-FF4" secondAttribute="bottom" constant="2" id="6sJ-oS-304"/>
+                                    <constraint firstAttribute="height" constant="303" id="748-lS-y1t"/>
+                                    <constraint firstAttribute="trailing" secondItem="N9P-12-odi" secondAttribute="trailing" id="E7L-dR-mgX"/>
+                                    <constraint firstAttribute="trailing" secondItem="gcr-rO-wO9" secondAttribute="trailing" id="Jvf-qT-1E1"/>
+                                    <constraint firstAttribute="trailing" secondItem="RFx-9g-FF4" secondAttribute="trailing" id="QSa-7N-fpU"/>
+                                    <constraint firstItem="RFx-9g-FF4" firstAttribute="leading" secondItem="3Wg-UV-EuW" secondAttribute="leading" id="S5m-TY-JPw"/>
+                                    <constraint firstItem="N9P-12-odi" firstAttribute="leading" secondItem="3Wg-UV-EuW" secondAttribute="leading" id="Sin-2k-Sxu"/>
+                                    <constraint firstItem="XnA-fy-bfe" firstAttribute="leading" secondItem="3Wg-UV-EuW" secondAttribute="leading" id="Tbl-L9-n2L"/>
+                                    <constraint firstItem="gcr-rO-wO9" firstAttribute="leading" secondItem="3Wg-UV-EuW" secondAttribute="leading" id="UFr-ep-y0L"/>
+                                    <constraint firstAttribute="trailing" secondItem="jCa-AM-Fdo" secondAttribute="trailing" id="X7w-cI-wcs"/>
+                                    <constraint firstItem="jCa-AM-Fdo" firstAttribute="leading" secondItem="3Wg-UV-EuW" secondAttribute="leading" id="Xhg-kY-wd4"/>
+                                    <constraint firstItem="XnA-fy-bfe" firstAttribute="top" secondItem="jCa-AM-Fdo" secondAttribute="bottom" constant="2" id="ZA2-X8-PCd"/>
+                                    <constraint firstItem="RFx-9g-FF4" firstAttribute="top" secondItem="3Wg-UV-EuW" secondAttribute="top" id="am0-Au-YN5"/>
+                                    <constraint firstAttribute="bottom" secondItem="XnA-fy-bfe" secondAttribute="bottom" id="bkJ-dO-xep"/>
+                                    <constraint firstItem="N9P-12-odi" firstAttribute="top" secondItem="gcr-rO-wO9" secondAttribute="bottom" constant="2" id="prf-I7-X5R"/>
+                                    <constraint firstAttribute="trailing" secondItem="XnA-fy-bfe" secondAttribute="trailing" id="sLj-Ux-3tR"/>
+                                    <constraint firstItem="jCa-AM-Fdo" firstAttribute="top" secondItem="N9P-12-odi" secondAttribute="bottom" constant="2" id="wn6-Do-UWA"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPy-ua-tKX">
+                                <rect key="frame" x="165.5" y="439" width="44" height="30"/>
+                                <state key="normal" title="UNDO">
+                                    <color key="titleColor" red="0.022309998050000002" green="0.70180886980000001" blue="0.07980661839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4eh-7E-hMR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Oq7-NN-Dfz">
+                                <rect key="frame" x="60" y="494" width="250" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdh-EG-bKA">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2k-kN-MN7">
+                                                <rect key="frame" x="10" y="49" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="HIT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme1_vertical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7h-MY-gSn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.4549019608" green="0.61176470589999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06I-kV-YKo">
+                                        <rect key="frame" x="50" y="0.0" width="50" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-uE-lMY">
+                                                <rect key="frame" x="10" y="49" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="HIT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme2_vertical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1aY-Ip-XdR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98109275100000004" green="0.40393486620000002" blue="0.022232532499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fom-xd-YJh">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIj-lG-BAY">
+                                                <rect key="frame" x="10" y="49" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Hit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme3_vertical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSR-nW-fCo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.72156862749999995" green="0.56862745100000001" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mE-Jp-9df">
+                                        <rect key="frame" x="150" y="0.0" width="50" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAw-Sv-9bP">
+                                                <rect key="frame" x="10" y="49" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Hit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme4_vertical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6b-lH-FPx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.88056098090000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3K-Lb-7bk">
+                                        <rect key="frame" x="200" y="0.0" width="50" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ro-Ij-otq">
+                                                <rect key="frame" x="10" y="49" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="HIt.">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitme5_vertical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EQ-RD-40D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.022309998050000002" green="0.70180886980000001" blue="0.07980661839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="y3K-Lb-7bk" firstAttribute="top" secondItem="Oq7-NN-Dfz" secondAttribute="top" id="1Yt-ey-6dj"/>
+                                    <constraint firstItem="06I-kV-YKo" firstAttribute="leading" secondItem="Pdh-EG-bKA" secondAttribute="trailing" id="5N4-vE-xOt"/>
+                                    <constraint firstItem="2mE-Jp-9df" firstAttribute="leading" secondItem="fom-xd-YJh" secondAttribute="trailing" id="8Zh-fC-i23"/>
+                                    <constraint firstItem="Pdh-EG-bKA" firstAttribute="top" secondItem="Oq7-NN-Dfz" secondAttribute="top" id="8wN-AF-a8L"/>
+                                    <constraint firstAttribute="bottom" secondItem="y3K-Lb-7bk" secondAttribute="bottom" id="Cje-vH-eId"/>
+                                    <constraint firstItem="y3K-Lb-7bk" firstAttribute="leading" secondItem="2mE-Jp-9df" secondAttribute="trailing" id="Dkt-l1-wf5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pdh-EG-bKA" secondAttribute="bottom" id="L9l-lO-v5Y"/>
+                                    <constraint firstItem="2mE-Jp-9df" firstAttribute="top" secondItem="Oq7-NN-Dfz" secondAttribute="top" id="WDN-dh-wht"/>
+                                    <constraint firstItem="06I-kV-YKo" firstAttribute="top" secondItem="Oq7-NN-Dfz" secondAttribute="top" id="cb8-sa-RH2"/>
+                                    <constraint firstAttribute="height" constant="128" id="cdg-DZ-9Pn"/>
+                                    <constraint firstAttribute="bottom" secondItem="fom-xd-YJh" secondAttribute="bottom" id="e52-Ua-IZV"/>
+                                    <constraint firstItem="fom-xd-YJh" firstAttribute="top" secondItem="Oq7-NN-Dfz" secondAttribute="top" id="ef8-VC-kn5"/>
+                                    <constraint firstAttribute="bottom" secondItem="06I-kV-YKo" secondAttribute="bottom" id="kYm-io-kDM"/>
+                                    <constraint firstItem="Pdh-EG-bKA" firstAttribute="leading" secondItem="Oq7-NN-Dfz" secondAttribute="leading" id="tbw-q9-Gf2"/>
+                                    <constraint firstAttribute="trailing" secondItem="y3K-Lb-7bk" secondAttribute="trailing" id="w6u-qV-VU1"/>
+                                    <constraint firstItem="fom-xd-YJh" firstAttribute="leading" secondItem="06I-kV-YKo" secondAttribute="trailing" id="yOM-GD-SeL"/>
+                                    <constraint firstAttribute="bottom" secondItem="2mE-Jp-9df" secondAttribute="bottom" id="yoI-af-XDj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oq7-NN-Dfz" secondAttribute="bottom" constant="45" id="16P-kS-zsd"/>
+                            <constraint firstItem="3Wg-UV-EuW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="49D-eh-cFU"/>
+                            <constraint firstItem="NPy-ua-tKX" firstAttribute="centerX" secondItem="3Wg-UV-EuW" secondAttribute="centerX" id="6n7-UK-hee"/>
+                            <constraint firstItem="NPy-ua-tKX" firstAttribute="top" secondItem="3Wg-UV-EuW" secondAttribute="bottom" constant="35" id="Xbd-J8-hxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Wg-UV-EuW" secondAttribute="trailing" constant="60" id="YIM-5h-zSg"/>
+                            <constraint firstItem="3Wg-UV-EuW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="jRh-pi-MB5"/>
+                            <constraint firstItem="Oq7-NN-Dfz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="t3z-o2-h5Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oq7-NN-Dfz" secondAttribute="trailing" constant="65" id="yEo-VS-9yk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="RFx-9g-FF4" id="FH9-Fq-Cb3"/>
+                        <outlet property="view1_vertical" destination="Pdh-EG-bKA" id="ZOJ-MH-yqx"/>
+                        <outlet property="view2" destination="gcr-rO-wO9" id="Cgf-AG-xUH"/>
+                        <outlet property="view2_vertical" destination="06I-kV-YKo" id="7qZ-lD-FdG"/>
+                        <outlet property="view3" destination="N9P-12-odi" id="a8t-V9-GFj"/>
+                        <outlet property="view3_vertical" destination="fom-xd-YJh" id="tUS-GM-dSW"/>
+                        <outlet property="view4" destination="jCa-AM-Fdo" id="sdt-T3-ras"/>
+                        <outlet property="view4_vertical" destination="2mE-Jp-9df" id="Baw-8a-uJu"/>
+                        <outlet property="view5" destination="XnA-fy-bfe" id="bhG-j4-5Fk"/>
+                        <outlet property="view5_vertical" destination="y3K-Lb-7bk" id="Obx-J9-CnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
